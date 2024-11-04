@@ -1,0 +1,64 @@
+#pincode-checker {
+    /* Sets a column layout for the pincode checker and aligns items to the start */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+#input-button-group {
+    /* Styles for the group containing the input and button, aligning items horizontally */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#pincode-input {
+    /* Styles for the pincode input field */
+    width: 495px; /* Sets width for larger screens */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s; /* Smooth transition effect on focus */
+}
+
+#pincode-input:focus {
+    /* Changes border color on input focus */
+    border-color: #28a745;
+}
+
+#check-pincode {
+    /* Styles for the check button */
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition effect on hover */
+    width: 150px; /* Sets fixed button width */
+}
+
+#check-pincode:hover {
+    /* Darkens button color on hover */
+    background-color: #218838;
+}
+
+#pincode-result {
+    /* Styles for the result display area, default color for error messages */
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    margin-top: 5px; /* Adds space between the button group and the result */
+}
+
+@media (max-width: 600px) {
+    #pincode-input {
+        /* Adjusts the input width for smaller screens */
+        width: 183px;
+    }
+}
